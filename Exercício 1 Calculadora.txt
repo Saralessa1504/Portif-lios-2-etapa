@@ -1,0 +1,198 @@
+Exercício 1: Calculadora
+programa
+
+{
+
+    funcao inicio()
+
+    {
+
+        real primeiroNumero, segundoNumero, resultado
+
+        inteiro operacao
+
+
+
+        escreva("Digite o primeiro número: ")
+
+        leia(primeiroNumero)
+
+
+
+        escreva("Digite o segundo número: ")
+
+        leia(segundoNumero)
+
+
+
+        escreva("\nEscolha a operação:\n")
+
+        escreva("1 - Soma\n")
+
+        escreva("2 - Subtração\n")
+
+        escreva("3 - Multiplicação\n")
+
+        escreva("4 - Divisão\n")
+
+        escreva("Opção: ")
+
+        leia(operacao)
+
+
+
+        escolha(operacao)
+
+        {
+
+            caso 1:
+
+                resultado = primeiroNumero + segundoNumero
+
+                escreva("Resultado: ", resultado)
+
+                pare
+
+
+
+            caso 2:
+
+                resultado = primeiroNumero - segundoNumero
+
+                escreva("Resultado: ", resultado)
+
+                pare
+
+
+
+            caso 3:
+
+                resultado = primeiroNumero * segundoNumero
+
+                escreva("Resultado: ", resultado)
+
+                pare
+
+
+
+            caso 4:
+
+                // Impede divisão por zero
+
+                se(segundoNumero != 0)
+
+                {
+
+                    resultado = primeiroNumero / segundoNumero
+
+                    escreva("Resultado: ", resultado)
+
+                }
+
+                senao
+
+                {
+
+                    escreva("Erro: não é possível dividir por zero.")
+
+                }
+
+                pare
+
+
+
+            caso contrario:
+
+                escreva("Opção inválida!")
+
+        }
+
+    }
+
+}
+
+Exercício 2: Tabuada
+
+programa
+
+{
+
+    funcao inicio()
+
+    {
+
+        inteiro numero, contador
+
+
+
+        escreva("Digite um número inteiro positivo: ")
+
+        leia(numero)
+
+
+
+        escreva("\nTabuada do ", numero, ":\n")
+
+
+
+        // Repete de 1 até 10
+
+        para(contador = 1; contador <= 10; contador++)
+
+        {
+
+            escreva(numero, " x ", contador, " = ", numero * contador, "\n")
+
+        }
+
+    }
+
+}
+
+Exercício 3: Sistema de Login
+
+programa
+
+{
+
+    inclua biblioteca Texto --> txt
+
+
+
+    funcao inicio()
+
+    {
+
+        cadeia senhaCorreta = "senha123"
+
+        cadeia senhaDigitada = ""
+
+
+
+        escreva("Digite a senha: ")
+
+        leia(senhaDigitada)
+
+
+
+        // Continua enquanto a senha estiver incorreta
+
+        enquanto(senhaDigitada != senhaCorreta)
+
+        {
+
+            escreva("Senha incorreta, tente novamente.\n")
+
+            escreva("Digite a senha: ")
+
+            leia(senhaDigitada)
+
+        }
+
+
+
+        escreva("Acesso Liberado! Bem-vindo!")
+
+    }
+
+}
