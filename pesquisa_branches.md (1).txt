@@ -1,0 +1,12 @@
+Branches:
+ O que são:
+ Para a programação, é uma linha de desenvolvimento independente, que permite que o usuário crie uma "cópia" do código principal.
+ Para que serve:
+ Ela serve para trabalhar em novos recursos ou corrigir bugs e falhas sem alterar ou quebrar o código oficial que está rodando em produção. Isso permite que a equipe teste ideias, desenvolva novas funcionalidades e corrija erros sem alterar ou corromper a versão principal.
+ Aplicações Práticas:
+ 1- Correção de um bug no sistema de login
+ Um erro no sistema impede que alguns usuários façam login. Assim, a branch ajuda o desenvolvedor criando uma chama correcao-login, dessa forma ela corrige o erro e faz diversos testes sem atrapalhar os que estão utilizando o sistema.
+2- Trabalho em equipe
+ Duas pessoas estão trabalhando no mesmo projeto. Um está criando sistema e outro está melhorando a área de perfil do usuário. Nisso, a branch pode auxiliar fazendo com que cada um crie sua própria branch e trabalhe de forma independendo, quando terminarem as alterações, eles unem ao projeto principal.
+3- Mudança no visual do site
+ Uma equipe decide melhorar a página inicial do sistema para deixá-la mais moderna e organizada, assim a empresa cria uma branch para alterar cores, imagens e também realizam vários testes para verificar se está tudo funcionando corretamente.

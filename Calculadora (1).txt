@@ -1,0 +1,60 @@
+programa
+{
+
+	funcao inicio()
+	{
+ 
+	//Input
+			//Variáveis
+	     real a, b, resultado
+          inteiro opcao
+
+			//Lugar para escrever os números
+		escreva("Digite o primeiro numero:")
+		leia(a)
+		escreva("Digite o segundo numero:")
+		leia(b)
+
+			//Operações
+		escreva("ESCOLHA UMA OPERAÇÃO\n")
+		escreva("1- Soma (+)\n")
+		escreva("2 - Subtração (-)\n")
+		escreva("3 - Multiplicação (*)\n")
+		escreva("4 - Divisão (/)\n")
+		leia(opcao)
+		
+			//Processment
+			
+			faca
+				escolha (opcao)
+				{
+				caso 1:
+					resultado = a + b
+					escreva("Resultado da Soma: ", resultado)
+					pare
+						
+				caso 2:
+					resultado = a - b
+					escreva("Resultado da Subtração: ", resultado)
+					pare
+					
+				caso 3:
+					resultado = a * b
+					escreva("Resultado da Multiplicação: ", resultado)
+					pare
+				
+				caso 4:
+					// Para evitar o número ser 0
+					se (b == 0) 
+					{
+						escreva("Erro: Não dá pra dividir por zero")
+					}
+				enquanto (opcao < 1 ou opcao > 4) 
+					{
+						resultado = a / b
+						escreva("Resultado da Divisão: ", resultado)
+					}
+					pare
+				}
+	}       
+}
