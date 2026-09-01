@@ -1,0 +1,29 @@
+programa
+{
+	
+	inclua biblioteca Matematica --> m
+	inclua biblioteca Texto --> t
+	inclua biblioteca Util --> u
+	funcao inicio()
+
+	{
+		cadeia texto = "Lessa"
+		cadeia substituicao
+		inteiro tamanho
+		
+		u.aguarde(500)
+		escreva("Numero sorteado entre 1 e 10:", u.sorteia(1,10), "\n" )
+		u.aguarde(500)
+		escreva( "Raiz quadrada de 64:", m.raiz(64.0, 2.0), "\n")
+		u.aguarde(500)
+		escreva( "3 elevado a 4:", m.potencia(3.0, 4.0), "\n" )
+		u.aguarde(500)
+		substituicao = t.substituir(texto, "sa", "ga")
+		escreva(texto) 					
+		escreva(" --> ", substituicao, "\n") 
+		u.aguarde(500)	
+		tamanho = t.numero_caracteres(texto)
+		escreva("Seu nome possui ", tamanho , " caracteres\n")
+		
+	}
+}
